@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Take-Break",
+    "version": "0.1",
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": ["content.js"]
+    }],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "ct.png",
+        "default_popup": "popup.html"
+    },
+    "options_page":   "options.html",
+    "permissions": [
+        "storage"
+    ]
+}
